@@ -58,7 +58,7 @@ func Test_SimulationEngine_Prepare(t *testing.T) {
 		require.Equal(t, "City1 has been destroyed by Alien #2 and Alien #1\n", out.String())
 	})
 
-	t.Run("Case 1: OK", func(t *testing.T) {
+	t.Run("Case 2: Error occurs", func(t *testing.T) {
 		ctx := context.Background()
 
 		error1 := fmt.Errorf("error 1")

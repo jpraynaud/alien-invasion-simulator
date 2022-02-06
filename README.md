@@ -1,7 +1,7 @@
 # Alien Invasion Simulator
+[![Go](https://github.com/jpraynaud/alien-invasion-simulator/actions/workflows/go.yml/badge.svg)](https://github.com/jpraynaud/alien-invasion-simulator/actions/workflows/go.yml)
 [![Go Report Card](https://goreportcard.com/badge/github.com/jpraynaud/alien-invasion-simulator)](https://goreportcard.com/report/github.com/jpraynaud/alien-invasion-simulator)
-[![Coverage status](https://codecov.io/github/jpraynaud/alien-invasion-simulator/coverage.svg?branch=main)](https://codecov.io/github/jpraynaud/alien-invasion-simulator?branch=main)
-[![GoDoc](https://godoc.org/github.com/jpraynaud/alien-invasion-simulator/pkg/render?status.svg)](https://godoc.org/github.com/jpraynaud/alien-invasion-simulator/pkg/render)
+[![GoDoc](https://godoc.org/github.com/jpraynaud/alien-invasion-simulator/pkg/simulator?status.svg)](https://godoc.org/github.com/jpraynaud/alien-invasion-simulator/pkg/simulator)
 
 This project implements a simple **Alien Invasion** simulator CLI. 
 
@@ -66,11 +66,14 @@ The following parameters are available :
 **Step 2: Get source code**
 
 ```bash
-#Download sources
-go get -d -t -v github.com/jpraynaud/alien-invasion-simulator/cmd/cli
+#Download sources from github
+git clone https://github.com/jpraynaud/alien-invasion-simulator
 
 # Go to sources directory
-cd $GOPATH/src/github.com/jpraynaud/alien-invasion-simulator
+cd alien-invasion-simulator
+
+# Checkout master branch
+git checkout master
 ```
 
 **Step3 : Build binary**
@@ -205,4 +208,4 @@ go run cmd/cli/main.go --help
 
 ## Documentation
 
-[![GoDoc](https://godoc.org/github.com/jpraynaud/alien-invasion-simulator/pkg/render?status.svg)](https://godoc.org/github.com/jpraynaud/alien-invasion-simulator/pkg/render)
+[![GoDoc](https://godoc.org/github.com/jpraynaud/alien-invasion-simulator/pkg/simulator?status.svg)](https://godoc.org/github.com/jpraynaud/alien-invasion-simulator/pkg/simulator)

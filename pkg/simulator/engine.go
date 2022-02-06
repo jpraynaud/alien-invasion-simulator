@@ -69,7 +69,7 @@ func (s *SimulationEngine) Prepare(ctx context.Context) error {
 			return err
 		}
 
-		// Move the aliens to its original city
+		// Move the alien to its original city
 		var nextCity *entity.City
 		aliveCities, err := s.world.GetAliveCities(ctx)
 		if err != nil {
