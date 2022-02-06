@@ -357,7 +357,7 @@ func Test_World_LinkScenario(t *testing.T) {
 	err = world.AddLink(ctx, cityZ, cityB, entity.East)
 	require.ErrorIs(t, err, entity.ErrUnknownCity)
 
-	// AddLink between CityA and CityB with unkown direction
+	// AddLink between CityA and CityB with unknown direction
 	err = world.AddLink(ctx, cityA, cityB, entity.Direction(0))
 	require.ErrorIs(t, err, entity.ErrUnknownDirection)
 
