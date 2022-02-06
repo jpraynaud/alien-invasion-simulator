@@ -1,0 +1,8 @@
+Paris north=Brussels east=London west=Berlin south=Barcelona
+Berlin north=Stockholm east=Warsaw
+Barcelona north=Paris east=Roma
+Athens
+London west=Paris
+Stockholm north=Warsaw
+Warsaw south=Geneva west=Berlin north=Stockholm
+Roma west=Barcelona north=Geneva
