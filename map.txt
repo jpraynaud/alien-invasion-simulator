@@ -1,4 +1,4 @@
-Paris north=Brussels east=London west=Berlin south=Barcelona
+Paris north=Brussels west=London east=Berlin south=Barcelona
 Berlin north=Stockholm east=Warsaw
 Barcelona north=Paris east=Roma
 Athens

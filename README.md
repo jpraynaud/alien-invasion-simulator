@@ -76,14 +76,14 @@ cd alien-invasion-simulator
 git checkout master
 ```
 
-**Step3 : Build binary**
+**Step 3 : Build binary**
 
 ```bash
 # Build
 go build -o bin/alien-invasion cmd/cli/main.go
 ```
 
-**Step3 : Verify**
+**Step 4 : Verify**
 
 ```bash
 # Verify
@@ -130,7 +130,7 @@ Roma north=Geneva west=Barcelona
 Athens
 Stockholm
 Geneva
-Paris north=Brussels south=Barcelona west=Berlin
+Paris north=Brussels south=Barcelona east=Berlin
 Brussels
 Berlin north=Stockholm
 Barcelona north=Paris east=Roma

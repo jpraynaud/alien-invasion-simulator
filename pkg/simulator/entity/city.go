@@ -40,7 +40,8 @@ func (c *City) GetCityTo(direction Direction) (*City, error) {
 	case West:
 		return c.West, nil
 	default:
-		return new(City), ErrUnknownDirection
+		var city *City
+		return city, ErrUnknownDirection
 	}
 }
 
@@ -83,6 +84,8 @@ func (c *City) RemoveCityTo(city *City) error {
 		c.South = nil
 	case c.West == city:
 		c.West = nil
+	default:
+		return ErrUnknownCity
 	}
 
 	return nil
