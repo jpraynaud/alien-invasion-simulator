@@ -1,7 +1,8 @@
 # Alien Invasion Simulator
 [![Go](https://github.com/jpraynaud/alien-invasion-simulator/actions/workflows/go.yml/badge.svg)](https://github.com/jpraynaud/alien-invasion-simulator/actions/workflows/go.yml)
+[![CodeQL](https://github.com/jpraynaud/alien-invasion-simulator/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/jpraynaud/alien-invasion-simulator/actions/workflows/codeql-analysis.yml)
 [![Go Report Card](https://goreportcard.com/badge/github.com/jpraynaud/alien-invasion-simulator)](https://goreportcard.com/report/github.com/jpraynaud/alien-invasion-simulator)
-[![GoDoc](https://godoc.org/github.com/jpraynaud/alien-invasion-simulator/pkg/simulator?status.svg)](https://godoc.org/github.com/jpraynaud/alien-invasion-simulator/pkg/simulator)
+[![GoDoc](https://godoc.org/github.com/jpraynaud/alien-invasion-simulator?status.svg)](https://godoc.org/github.com/jpraynaud/alien-invasion-simulator)
 
 This project implements a simple **Alien Invasion** simulator CLI. 
 
@@ -23,13 +24,13 @@ This project implements a simple **Alien Invasion** simulator CLI.
 
 The principle of the **simulation** is:
 * a **world** describes a list of **cities** and their possible **links** to other **cities** 
-* a **link** can be set in any **direction** of this set: **{North, East, South, West}**
+* a **link** can be defined in any **direction** of this set: **{North, East, South, West}**
 * some **aliens** are spawned randomly in the **world**
-* the **aliens** move randomly from one **city** to another existing **link**
+* the **aliens** move randomly from one **city** to another **city** using an existing **link**
 * when two **aliens** meet in a **city** they fight so that:
-    * **city** gets destroyed (so do the links to this **city**)
+    * the **city** gets destroyed (so do the links to this **city**)
     * the **aliens** are trapped (so that they are not able to move anymore)
-* the **simulation** ends when:
+* the **simulation** ends when any of the conditions below is met:
     * all the **cities** are destroyed
     * all the **aliens** are trapped
     * a maximum number of **steps** is reached
@@ -41,7 +42,7 @@ The principle of the **simulation** is:
 The following assumptions have been made :
 * the **city** names don't include any space (which should be replaced by any other character). For example, use ***New-York*** instead of ***New York***.
 * **aliens** are spawned once at the beginning of the simulation
-* the validity off the **links** is not checked (meaning that a **city** may be linked to the same city through several directions)
+* the validity of the **links** is not checked (meaning that a **city** may be linked to the same city through several directions)
 
 ---
 
@@ -208,4 +209,4 @@ go run cmd/cli/main.go --help
 
 ## Documentation
 
-[![GoDoc](https://godoc.org/github.com/jpraynaud/alien-invasion-simulator/pkg/simulator?status.svg)](https://godoc.org/github.com/jpraynaud/alien-invasion-simulator/pkg/simulator)
+[![GoDoc](https://godoc.org/github.com/jpraynaud/alien-invasion-simulator?status.svg)](https://godoc.org/github.com/jpraynaud/alien-invasion-simulator)
